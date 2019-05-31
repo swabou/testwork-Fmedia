@@ -1,0 +1,136 @@
+// font mixins
+@mixin logo-text {
+	font-family: $default-font;
+	font-size: 36px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 40px;
+
+	@media screen and (max-width: $max-phone) {
+		font-size: 24px;
+	}
+}
+
+@mixin main-content__heading {
+	font-family: $default-font;
+	font-size: 24px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 28px;
+
+	@media screen and (max-width: $max-phone) {
+		font-size: 14px;
+	}
+}
+
+@mixin feature__heading {
+	font-family: $default-font;
+	font-size: 22px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 28px;
+
+	@media screen and (max-width: $max-phone) {
+		font-size: 16px;
+	}
+}
+
+@mixin feature-list__item {
+	font-family: $default-font;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 18px;
+}
+
+@mixin watch__sale {
+	font-family: $default-font;
+	font-size: 30px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 36px;
+
+	@media screen and (max-width: $max-phone) {
+		font-size: 16px;
+	}
+}
+
+@mixin value {
+	font-family: $default-font;
+	font-size: 25px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 28px;
+
+	@media screen and (max-width: $max-phone) {
+		font-size: 14px;
+	}
+}
+
+@mixin watch__btn {
+	font-family: $default-font;
+	font-size: 33px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 36px;
+}
+
+@mixin rate {
+	font-family: $default-font;
+	font-size: 16px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 18px;	
+}
+
+@mixin delivery {
+	font-family: $opensans-font;
+	font-size: 23px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 25px;
+}
+
+@mixin list-action__item {
+	font-family: $opensans-font;
+	font-size: 19px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 21px;
+}
+
+@mixin form__heading {
+	font-family: $opensans-font;
+	font-size: 18px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 21px;
+}
+
+@mixin card-service__name {
+	font-family: $opensans-font;
+	font-size: 21px;
+	font-weight: 600;
+	font-style: normal;
+	line-height: 24px;
+}
+
+@mixin card-service__text {
+	font-family: $opensans-font;
+	font-size: 17px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 18px;
+}
+
+// other mixins
+@mixin list-zero {
+	padding: 0;
+	margin: 0;
+
+	list-style-type: none;
+}
+
+@mixin container-phone {
+	width: 320px;
+}

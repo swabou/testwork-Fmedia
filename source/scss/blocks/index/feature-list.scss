@@ -1,0 +1,47 @@
+.feature-list {
+    @include list-zero;
+
+    max-width: 200px;
+}
+
+.feature-list__item {
+    @include feature-list__item;
+
+    color: $font-color;
+
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-bottom: 30px;
+}
+
+.feature-list__item::before {
+    content: '';
+
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.feature-list__item--diamond::before {
+	content: url("../img/Icon_1.png");
+}
+
+.feature-list__item--hammer::before {
+	content: url("../img/Icon_2.png");
+}
+
+.feature-list__item--drop::before {
+	content: url("../img/Icon_3.png");
+}
+
+// media
+
+// Iphone
+@media screen and (max-width: $max-phone) {
+    .feature-list {
+        display: none;
+    }
+}

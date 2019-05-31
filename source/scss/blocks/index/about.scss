@@ -1,0 +1,14 @@
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// media
+
+// Iphone
+@media screen and (max-width: $max-phone) {
+    .about {
+    	order: 3;
+    }
+}

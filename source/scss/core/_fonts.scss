@@ -1,0 +1,76 @@
+// Futura PT Medium - font-weight: 500;
+@font-face {
+font-family: 'Futura PT';
+src: url('../fonts/FuturaPT-Medium.woff') format('woff'),
+url('../fonts/FuturaPT-Medium.ttf') format('truetype'),
+url('../fonts/FuturaPT-Medium.eot'),
+url('../fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype');
+font-weight: 500;
+font-style: normal;
+}
+
+// Futura PT Demi - font-weight: 600;
+@font-face {
+font-family: 'Futura PT';
+src: url('../fonts/FuturaPT-Demi.woff') format('woff'),
+url('../fonts/FuturaPT-Demi.ttf') format('truetype'),
+url('../fonts/FuturaPT-Demi.eot'),
+url('../fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype');
+font-weight: 600;
+font-style: normal;
+}
+
+// Futura PT Book - font-weight: 400;
+@font-face {
+font-family: 'Futura PT';
+src: url('../fonts/FuturaPT-Book.woff') format('woff'),
+url('../fonts/FuturaPT-Book.ttf') format('truetype'),
+url('../fonts/FuturaPT-Book.eot'),
+url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype');
+font-weight: 400;
+font-style: normal;
+}
+
+// Futura PT Bold - font-weight: 700;
+@font-face {
+font-family: 'Futura PT';
+src: url('../fonts/FuturaPT-Bold.woff') format('woff'),
+url('../fonts/FuturaPT-Bold.ttf') format('truetype'),
+url('../fonts/FuturaPT-Bold.eot'),
+url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype');
+font-weight: 700;
+font-style: normal;
+}
+
+// Futura PT Heavy - font-weight: 900;
+@font-face {
+font-family: 'Futura PT';
+src: url('../fonts/FuturaPT-Heavy.woff') format('woff'),
+url('../fonts/FuturaPT-Heavy.ttf') format('truetype'),
+url('../fonts/FuturaPT-Heavy.eot'),
+url('../fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype');
+font-weight: 900;
+font-style: normal;
+}
+
+// Avenir Next Bold - font-weight: 700;
+@font-face {
+font-family: 'Avenir Next Cyr';
+src: url('../fonts/AvenirNextCyr-Bold.woff') format('woff'),
+url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype'),
+url('../fonts/AvenirNextCyr-Bold.eot'),
+url('../fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype');
+font-weight: 700;
+font-style: normal;
+}
+
+// PT Sans Regular - font-weight: 400;
+@font-face {
+font-family: 'PT Sans';
+src: url('../fonts/PTSans-Regular.woff') format('woff'),
+url('../fonts/PTSans-Regular.ttf') format('truetype'),
+url('../fonts/PTSans-Regular.eot'),
+url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype');
+font-weight: 400;
+font-style: normal;
+}

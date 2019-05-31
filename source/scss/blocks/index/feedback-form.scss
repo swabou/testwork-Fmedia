@@ -1,0 +1,43 @@
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-form__line {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 360px;
+
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+.feedback-form__input {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.feedback-form__label {
+    padding-left: 25px;
+
+    margin-bottom: 15px;
+}
+
+.feedback-form__input {
+    width: 100%;
+    outline: none;
+}
+
+// media
+
+// Iphone
+@media screen and (max-width: $max-phone) {
+    .feedback-form__line {
+        width: 290px;
+    }
+}

@@ -1,0 +1,42 @@
+.choice {
+    width: 1160px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.choice__title {
+    margin: 0;
+    margin-bottom: 40px;
+
+    text-transform: uppercase;
+
+    @include form__heading;
+}
+
+.choice__wrap-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 360px;
+    margin: 0 auto;
+
+    padding: 35px;
+
+    background-image: url("../img/fon_form.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.choice__color {
+    color: $logo-color;
+}
+

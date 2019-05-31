@@ -1,0 +1,38 @@
+.value {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+	position: absolute;
+
+	bottom: 32%;
+
+	background-image: url("../img/price.png");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	width: 100%;
+}
+
+.value__old,
+.value__new {
+	@include value;
+}
+
+.value__old {
+	text-decoration: line-through;
+}
+
+// media
+
+// Iphone
+@media screen and (max-width: $max-phone) {
+    .value {
+    	bottom: 40%;
+
+    	background-size: 90%;
+    	width: 90%;
+    }
+}

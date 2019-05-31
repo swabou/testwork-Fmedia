@@ -1,0 +1,77 @@
+.watch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.watch__img {
+    max-width: 100%;
+
+    padding-left: 50px;
+
+    z-index: 3;
+}
+
+.watch__sale {
+    @include watch__sale;
+
+    background-image: url("../img/sale.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 115px;
+    padding-right: 100px;
+
+    position: absolute;
+    left: -50px;
+
+    margin: 0;
+}
+
+.watch__btn {
+    @include watch__btn;
+
+    background-color: $btn-action;
+
+    border: none;
+
+    text-transform: uppercase;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 65px;
+    padding-right: 65px;
+
+    text-shadow: 0px 4px 6.3px rgba(0, 0, 0, 0.46);
+    -moz-transform: matrix(0.64189189189189, 0, 0, 0.63507109004739, 0, 0);
+    -webkit-transform: matrix(0.64189189189189, 0, 0, 0.63507109004739, 0, 0);
+    -ms-transform: matrix(0.64189189189189, 0, 0, 0.63507109004739, 0, 0);
+}
+
+// media
+
+// Iphone
+@media screen and (max-width: $max-phone) {
+    .watch {
+        order: 1;
+    }
+
+    .watch__img {
+        max-width: 75%;
+        padding: 0;
+    }
+
+    .watch__sale {
+        background-size: 200px;
+        padding: 15px;
+
+        left: 40px;
+        top: 90px;
+    }
+}

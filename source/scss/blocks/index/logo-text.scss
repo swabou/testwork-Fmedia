@@ -1,0 +1,5 @@
+.logo-text {
+	color: $logo-color;
+
+	@include logo-text;
+}

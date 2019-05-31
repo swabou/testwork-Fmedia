@@ -1,0 +1,27 @@
+.feature-medal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feature-medal__img {
+    margin-right: 20px;
+}
+
+// media
+
+// Iphone
+@media screen and (max-width: $max-phone) {
+    .feature-medal {
+        position: absolute;
+        top: 15%;
+        right: 0;
+        flex-direction: column-reverse;
+    }
+
+    .feature-medal__img {
+    	max-width: 50%;
+
+    	margin-right: 0;
+    }
+}

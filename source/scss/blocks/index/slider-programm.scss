@@ -1,0 +1,78 @@
+.slider-programm {
+    width: 625px;
+    margin: 0 auto;
+}
+
+.slider-programm .slider-programm__item {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-color: $slide-color;
+    color: $default-color;
+}
+
+// Custom dots
+.slick-dots li.slick-active button:before {
+    color: $dots-color;
+    opacity: 0.75;
+
+    font-size: 40px;
+}
+
+.slick-dots li button:before {
+    font-size: 40px;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    color: $dots-color;
+    opacity: 1;
+}
+
+// Custom arrows
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+}
+
+.slick-prev,
+.slick-next {
+    background-image: url('../img/arrow-right.svg');
+
+    width: 45px;
+    height: 81px;
+
+    z-index: 1;
+
+    &:hover,
+    &:focus {
+        background-image: url('../img/arrow-right.svg');
+    }
+}
+
+.slick-next {
+    right: -10%;
+}
+
+.slick-prev {
+    left: -10%;
+
+    transform: translate(0, -50%) rotate(180deg);
+}
+
+// media
+
+// IPHONE
+@media screen and (max-width: $max-phone) {
+    .slider-programm {
+        width: 320px;
+
+    }
+
+    .slick-prev,
+    .slick-next {
+        display: none;
+    }
+}

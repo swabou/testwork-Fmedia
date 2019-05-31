@@ -1,0 +1,33 @@
+.list-action {
+	@include list-zero;
+
+	max-width: 290px;
+}
+
+.list-action__item {
+	@include list-action__item;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	margin-bottom: 30px;
+}
+
+.list-action__item::before {
+	content: '';
+
+	margin-right: 25px;
+}
+
+.list-action__item--call::before {
+	content: url("../img/Icon_4.png");
+}
+
+.list-action__item--pay::before {
+	content: url("../img/Icon_5.png");
+}
+
+.list-action__item--bus::before {
+	content: url("../img/Icon_6.png");
+}

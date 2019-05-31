@@ -1,0 +1,45 @@
+.main-content {
+    width: 1170px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content__heading {
+    color: $font-color;
+
+    @include main-content__heading;
+
+    text-transform: uppercase;
+}
+
+.main-content__wrap {
+	width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+// media
+
+// Iphone
+@media screen and (max-width: $max-phone) {
+    .main-content {
+        @include container-phone;
+    }
+
+    .main-content__wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content__heading {
+        padding-right: 15px;
+
+        text-align: right;
+    }
+}

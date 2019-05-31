@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AMST</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="wrapper">
+        <main class="main-content">
+            <h1 class="main-content__heading"><span class="logo-text">AMST</span> часы, которые выбирают сильные мужчины</h1>
+            <div class="main-content__wrap">
+                <section class="main-content__item feature">
+                    <h2 class="feature__heading">Хит продаж!</h2>
+                    <ul class="feature_item feature-list">
+                        <li class="feature-list__item feature-list__item--diamond">
+                            стекло&nbsp;с&nbsp;сапфировым покрытием
+                        </li>
+                        <li class="feature-list__item feature-list__item--hammer">
+                            противоударные и надежные
+                        </li>
+                        <li class="feature-list__item feature-list__item--drop">
+                            водонепроницаемый корпус
+                        </li>
+                    </ul>
+                    <div class="feature_item feature-medal">
+                        <img class="feature-medal__img" src="img/30_giorni.png" alt="medal">
+                        <img class="feature-medal__img" src="img/100.png" alt="medal">
+                    </div>
+                </section>
+                <section class="main-content__item watch">
+                    <img class="watch__img" src="img/clock-1.png" alt="watch">
+                    <p class="watch__sale">-72%</p>
+                    <div class="watch__price value">
+                        <p class="value__old">3 535k idr</p>
+                        <p class="value__new">990k IDr</p>
+                    </div>
+                    <button class="watch__btn">Заказать</button>
+                </section>
+                <div id="wrapper">
+                    <div class="cover"></div>
+                    <div class="modal">
+                        <div class="content">
+                            <!-- Slider programm -->
+                            <div class="slider-programm">
+                                <article class="slider-programm__item card-service">
+                                    <img class="card-service__img" src="img/feedback_1.png" alt="watch">
+                                    <h4 class="card-service__name">Влад Киров</h4>
+                                    <p class="card-service__text">Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                                    </p>
+                                </article>
+                                <article class="slider-programm__item card-service">
+                                    <img class="card-service__img" src="img/feedback_2.png" alt="watch">
+                                    <h4 class="card-service__name">Игорь Прихватов</h4>
+                                    <p class="card-service__text">Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                                    </p>
+                                </article>
+                                <article class="slider-programm__item card-service">
+                                    <img class="card-service__img" src="img/feedback_3.png" alt="watch">
+                                    <h4 class="card-service__name">Стас Болотный</h4>
+                                    <p class="card-service__text">Пришли часы быстро, две недели в пути. Упакованы были отлично, в воздушную подушку и фирменную коробочку, бирки все присутствовали. На выбор у продавца эти часики в трех оттенках: золото, серебро и в черном цвете.
+                                    </p>
+                                </article>
+                            </div>
+                            <!-- End slider programm -->
+                        </div>
+                    </div>
+                </div>
+                <section class="main-content__item about">
+                    <article class="about__item rate">
+                        <h4 class="rate__heading">Средний рейтинг</h4>
+                        <p class="rate__text">среди наших покупателей</p>
+                        <button class="rate__btn open-modal-btn">Читать отзывы</button>
+                    </article>
+                    <article class="about__item delivery">
+                        <h4 class="delivery__heading">Доставка</h4>
+                        <p class="delivery__text">Оплата</p>
+                        <ul class="delivery__list list-action">
+                            <li class="list-action__item list-action__item--call">Оставьте заявку и мы вам перезвоним.</li>
+                            <li class="list-action__item list-action__item--pay">Оплата при получении.</li>
+                            <li class="list-action__item list-action__item--bus">Доставка в течении 3-4 дней.</li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+        </main>
+    </section>
+    <!-- End Choice Programm -->
+    <!-- popup -->
+    <div class="popup">
+        <div class="popup__content">
+            <!-- Feedback Form -->
+            <div class="choice__wrap-form">
+                <h2 class="choice__title">оставьте ваши контактные данные и наш менеджер <span class="choice__color">свяжется с вами!</span></h2>
+                <form class="feedback-form" action="#" method="POST" name="feedback">
+                    <p class="feedback-form__line">
+                        <label class="feedback-form__label" for="name">Пример: Василий Петров</label>
+                        <input class="feedback-form__input" type="text" id="name" name="user" required placeholder="Ваше имя">
+                    </p>
+                    <p class="feedback-form__line">
+                        <label class="feedback-form__label" for="tel">Пример: +79230098456</label>
+                        <input class="feedback-form__input" type="tel" required id="tel" name="tel" placeholder="Ваш номер телефона">
+                    </p>
+                    <button type="submit" class="feedback-form__btn watch__btn">Заказать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Jquery and Slick Slider -->
+    <script src="js/libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="js/libs/jquery/jquery-ui.min.js"></script>
+    <script src="js/libs/slick-slider/slick.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 115px;
+}
+
+.rate__heading,
+.rate__text {
+    @include rate;
+
+    margin: 0;
+
+    text-transform: uppercase;
+}
+
+.rate__heading {
+    color: $rate-color;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.rate__heading::before {
+    content: url("../img/stars.png");
+
+    margin-bottom: 20px;
+}
+
+.rate__text {
+	margin-bottom: 25px;
+}
+
+.rate__btn {
+	background-color: transparent;
+
+	text-transform: uppercase;
+
+	border: 2px solid $rate-color;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+    margin-bottom: 75px;
+}
